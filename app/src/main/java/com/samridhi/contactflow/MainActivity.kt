@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import com.samridhi.contactflow.navigation.AppNavGraph
 import com.samridhi.contactflow.navigation.AppNavigationActions
 import com.samridhi.contactflow.presentation.ExampleScreen
+import com.samridhi.contactflow.presentation.homescreen.HomeScreen
 import com.samridhi.contactflow.ui.theme.ContactFlowTheme
 
 class MainActivity : ComponentActivity() {
@@ -16,11 +17,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ContactFlowTheme {
-               ContactApp(
-                   onNavigationEnd = {
-                      finish()
-                   }
-               )
+//               ContactApp(
+//                   onNavigationEnd = {
+//                      finish()
+//                   }
+//               )
+                HomeScreen()
             }
         }
     }
